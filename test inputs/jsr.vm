@@ -1,0 +1,11 @@
+print_eax:
+	push ebp
+	mov ebp, esp
+	prn eax
+	pop ebp
+	ret
+start:
+	mov eax, 10
+	call print_eax
+	mov eax, 15
+	call print_eax

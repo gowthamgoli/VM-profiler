@@ -1,0 +1,14 @@
+	mov eax, 0
+label1:
+
+label2:
+	mov ebx, 5
+loop:
+	prn eax
+	inc eax
+	cmp eax, 10
+	jl loop
+	add eax, 10
+	jmp end
+
+end:
